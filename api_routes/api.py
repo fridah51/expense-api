@@ -5,4 +5,4 @@ from .expense import expense_router
 router = APIRouter()
 
 
-router.include_router(expense_router, prefix = "/expenses", tags=["TODOS"], )
+router.include_router(expense_router, prefix = "/expenses", tags=["EXPENSES"], )

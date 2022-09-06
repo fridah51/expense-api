@@ -78,8 +78,7 @@ def  update_expense(expID:int, payload:ExpensePut):
 @expense_router.delete("/{expID}", 
 status_code=200,
 summary="delete item",
-response_model=Dict[str,str],
-tags=["TODOS"]
+response_model=Dict[str,str]
 )
 def  delete_expense(expID:int):
     with open('db.json', 'r') as f:
